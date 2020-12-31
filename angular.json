@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "examen"
+    }
+  },
+  "defaultProject": "examen",
+  "cli": {
+    "analytics": "c46988a8-9d4f-4079-a3b6-e95cafadced4"
+  }
 }

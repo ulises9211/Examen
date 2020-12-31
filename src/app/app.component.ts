@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DatosService } from './services/datos.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'examen';
+  data = [];
+  constructor(private dotosService: DatosService) {
+    this.dotosService.getData().subscribe( (data: any) => {
+      this.data = data;
+      console.log(data);
+      
+    })
+  }
 }
