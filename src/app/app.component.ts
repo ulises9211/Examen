@@ -12,7 +12,7 @@ export class AppComponent {
     this.dotosService.getData().subscribe( (data: any) => {
       this.data = data;
       console.log(data);
-      
+  
     })
   }
 }

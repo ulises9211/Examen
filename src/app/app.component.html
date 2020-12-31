@@ -3,16 +3,25 @@
     <thead>
       <tr>
         <th scope="col">id</th>
-        <th scope="col">Title</th>
-        <th scope="col">Body</th>
-     
+        <th scope="col">Vehicle_plate</th>
+        <th scope="col">Shipment</th>
+        <th scope="col">Translate Name</th>
+        <th scope="col">Timezone</th>
+        <th scope="col">Latitude</th>
+        <th scope="col">Longitude</th>
+        <th scope="col">Speed</th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let dato of data">
         <th scope="row">{{dato.id}}</th>
-        <td>{{dato.title}}</td>
-        <td>{{dato.body}}</td>
+        <td>{{dato.vehicle_plate}}</td>
+        <td>{{dato.shipment}}</td>
+        <td>{{dato.transline_name}}</td>
+        <td>{{dato.timezone}}</td>
+        <td>{{dato.latitude}}</td>
+        <td>{{dato.longitude}}</td>
+        <td>{{dato.speed}}</td>
       </tr>
   </table>
 </div>
